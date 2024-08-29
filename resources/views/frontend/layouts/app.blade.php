@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ url('/') }}/assets/css/plugins.css">
     <link rel="stylesheet" href="{{ url('/') }}/assets/css/style.css">
     <link rel="stylesheet" href="{{ url('/') }}/assets/css/custom.css">
+    @stack('links')
 </head>
 
 <body>
@@ -50,7 +51,7 @@
                                     <option value="R K Hospital">R K Hospital > 10-15%</option>
                                 </select>
                             </div>
-                            
+
                             <div class="mb-3">
                                 <label for="patientName" class="form-label">Patient Name*</label>
                                 <input type="text" class="form-control" id="patientName" name="patient_name"
@@ -79,16 +80,14 @@
             </div>
         </div>
 
-
-        <script type="text/javascript" data-pagespeed-no-defer>
-            pagespeed.lazyLoadImages.overrideAttributeFunctions();
-        </script>
         <script src="{{ url('/') }}/assets/js/modernizr-3.6.0.min.js"></script>
         <script src="{{ url('/') }}/assets/js/jquery.min.js"></script>
         <script src="{{ url('/') }}/assets/js/popper.min.js"></script>
         <script src="{{ url('/') }}/assets/js/bootstrap.min.js"></script>
         <script src="{{ url('/') }}/assets/js/plugins.js"></script>
         <script src="{{ url('/') }}/assets/js/main.js"></script>
+        @stack('scripts')
+
 </body>
 
 </html>

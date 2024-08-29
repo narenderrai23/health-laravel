@@ -93,4 +93,7 @@ class HomeController extends Controller
             'funfacts' => $funfacts,
         ]);
     }
+
+
+
 }

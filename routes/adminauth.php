@@ -24,8 +24,14 @@ Route::group(['middleware' => ['user-access:admin'], 'prefix' => 'admin', 'as' =
     Route::resource('about', AboutController::class);
     Route::resource('funfact', FunFactController::class);
     Route::resource('missionvisions', MissionVisionController::class);
-    Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
 
     Route::get('/enquiry', [EnquiryController::class, 'index'])->name('enquiry.index');
     Route::delete('/enquiry/{id}', [EnquiryController::class, 'destroy'])->name('enquiry.destroy');
+
+
+    Route::resource('appointments', AppointmentController::class);
+
+    // Route::get('appointments', [AppointmentController::class, 'appointments'])->name('appointments.index');
+    // Route::get('appointments', [AppointmentController::class, 'appointments'])->name('appointments.index');
+
 });

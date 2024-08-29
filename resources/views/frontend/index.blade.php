@@ -129,7 +129,7 @@
                         <h2>For your convenience, you can book your appointment</h2>
                     </div>
                     <div class="tm-cta-button">
-                        <a href="book-an-appointment" class="tm-button tm-button-white">Book an
+                        <a href="{{ route('appointments.index') }}" class="tm-button tm-button-white">Book an
                             Appointment</a>
                     </div>
                 </div>

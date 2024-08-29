@@ -92,6 +92,12 @@
                     'icon' => 'fa fa-question-circle',
                     'submenu' => [],
                 ],
+                [
+                    'title' => 'Appointments',
+                    'route' => $guardRoutePrefix . 'appointments.index',
+                    'icon' => 'fa fa-calendar-check',
+                    'submenu' => [],
+                ],
             ];
         @endphp
 

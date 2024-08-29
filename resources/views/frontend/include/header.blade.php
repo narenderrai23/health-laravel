@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-md-5 col-sm-6 col-12">
                     <div class="header-topbutton">
-                        <a href="#" class="tm-button bg-danger" data-toggle="modal" data-target="#bookAppointmentModal">Book an Appointment</a>
+                        <a href="{{route('appointments.index')}}" class="tm-button bg-danger" >Book an Appointment</a>
                     </div>
                 </div>
             </div>
